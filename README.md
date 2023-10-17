@@ -66,7 +66,7 @@ Mobile Web App Screenshot:
     ```js
     function checkForPalindrome(message) {
     ...
-    let output = [];
+      let output = [];
       if ( msgClean == '' ) {
           output.push('error');
           return output;
@@ -93,10 +93,10 @@ Mobile Web App Screenshot:
       ```js
       function checkForPalindrome(message) {
       ...
-      let output = {
-            isPalindrome:'',
-            revMsg: '',
-            numPushUps:'',
+        let output = {
+              isPalindrome:'',
+              revMsg: '',
+              numPushUps:'',
             };
         if ( msgClean == '' ) {
             output.isPalindrome = 'error';
