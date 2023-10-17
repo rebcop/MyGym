@@ -43,21 +43,21 @@
     --rc-indigo-900: hsl(263, 88%, 10%);
     /* #endregion indigo */
     /* #region purple */
-    --rc-purple-core: #6f42c1;
-    --rc-purple-100: hsl(261, 52%, 90%);
-    --rc-purple-150: hsl(261, 52%, 85%);
-    --rc-purple-200: hsl(261, 52%, 80%);
-    --rc-purple-300: hsl(261, 52%, 70%);
-    --rc-purple-400: hsl(261, 52%, 60%);
-    --rc-purple-500: hsl(261, 52%, 50%);
-    --rc-purple-600: hsl(261, 52%, 40%);
-    --rc-purple-700: hsl(261, 52%, 30%);
-    --rc-purple-800: hsl(261, 52%, 20%);
-    --rc-purple-850: hsl(261, 52%, 15%);
-    --rc-purple-900: hsl(261, 52%, 10%);
+    --rc-purple-core: hsl(258, 51%, 51%);
+    --rc-purple-100: hsl(258, 52%, 90%);
+    --rc-purple-150: hsl(258, 52%, 85%);
+    --rc-purple-200: hsl(258, 52%, 80%);
+    --rc-purple-300: hsl(258, 52%, 70%);
+    --rc-purple-400: hsl(258, 52%, 60%);
+    --rc-purple-500: hsl(258, 52%, 50%);
+    --rc-purple-600: hsl(258, 52%, 40%);
+    --rc-purple-700: hsl(258, 52%, 30%);
+    --rc-purple-800: hsl(258, 52%, 20%);
+    --rc-purple-850: hsl(258, 52%, 15%);
+    --rc-purple-900: hsl(258, 52%, 10%);
     /* #endregion purple */
     /* #region pink */
-    --rc-pink-core: #d63384;
+    --rc-pink-core: hsl(330, 67%, 52%);
     --rc-pink-100: hsl(331, 47%, 90%);
     --rc-pink-150: hsl(331, 47%, 85%);
     --rc-pink-200: hsl(331, 47%, 80%);
