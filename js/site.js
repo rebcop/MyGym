@@ -81,6 +81,7 @@ function displayResults(message) {
         document.getElementById('msg').textContent = `Your message reversed is: ${message[1]}`;
         document.getElementById('alert').classList.add('alert-success');
         document.getElementById('alert').classList.remove('alert-danger');
+        document.getElementById('alert').classList.remove('alert-warning');
 
     // Display error message if the input from user does not have any letters or numbers to check
     } else if ( message[0] == 'error') {
@@ -88,6 +89,7 @@ function displayResults(message) {
         document.getElementById('msg').textContent = `Please enter letters or numbers`;
         document.getElementById('alert').classList.add('alert-warning');
         document.getElementById('alert').classList.remove('alert-success');
+        document.getElementById('alert').classList.remove('alert-danger');
     }
     
     // Display fail message if the input from user is not a palindrome
@@ -95,6 +97,7 @@ function displayResults(message) {
         document.getElementById('results').textContent = `Not a Palindrome! Drop and Give Me ${message[2]}!`;
         document.getElementById('msg').textContent = `Your message reversed is: ${message[1]}`;
         document.getElementById('alert').classList.remove('alert-success');
+        document.getElementById('alert').classList.remove('alert-warning');
         document.getElementById('alert').classList.add('alert-danger');
 
     }
