@@ -27,8 +27,8 @@ Mobile Web App Screenshot:
 
 ### Links
 
-- Live Site URL: <a href="https://courageous-kheer-dbb7e6.netlify.app/" target="_blank">Netlify</a>
-- Repo URL: <a href="https://github.com/rebcop/MyGym" target="_blank">Github Repo</a>
+- Live Site URL: [Netlify](https://courageous-kheer-dbb7e6.netlify.app/)
+- Repo URL: [Github Repo](https://github.com/rebcop/MyGym)
 
 ## My process
 
@@ -124,11 +124,10 @@ Mobile Web App Screenshot:
 
 ### Useful resources
 
-- <a href="https://www.w3schools.com/js/js_regexp.asp" target="_blank">W3 Schools</a>
-
-- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank">MDN Web Docs</a>
+- [W3 Schools](https://www.w3schools.com/js/js_regexp.asp)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)
 
 ## Author
 
-- Check out my portfolio - <a href="https://rebcop.dev/" target="_blank">Rebecca Copeland</a>
-- Message Me - <a href="https://www.linkedin.com/in/rebcop/" target="_blank">LinkedIn</a>
+- Check out my portfolio - [Rebecca Copeland](https://rebcop.dev/)
+- Message Me - [LinkedIn](https://www.linkedin.com/in/rebcop/)
