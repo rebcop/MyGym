@@ -27,8 +27,8 @@ Mobile Web App Screenshot:
 
 ### Links
 
-- Live Site URL: <a href="https://fanciful-bublanina-1545ce.netlify.app/" target="_blank">Netlify</a>
-- Repo URL: <a href="https://github.com/rebcop/BlossomBuds" target="_blank">Github Repo</a>
+- Live Site URL: <a href="https://courageous-kheer-dbb7e6.netlify.app/" target="_blank">Netlify</a>
+- Repo URL: <a href="https://github.com/rebcop/MyGym" target="_blank">Github Repo</a>
 
 ## My process
 
@@ -87,36 +87,36 @@ Mobile Web App Screenshot:
     }
     ```
 
-    3. Use objects to return multiple values from a function instead of an array so that the values can be accessed by name instead of index.
-       Accessing by name allows the code to be more easily read.
+  3. Use objects to return multiple values from a function instead of an array so that the values can be accessed by name instead of index.
+     Accessing by name allows the code to be more easily read.
 
-        ```js
-        function checkForPalindrome(message) {
-        ...
-        let output = {
-              isPalindrome:'',
-              revMsg: '',
-              numPushUps:'',
-              };
-          if ( msgClean == '' ) {
-              output.isPalindrome = 'error';
-              return output;
-      
-          } else if ( msgClean == msgCleanRev ) {
-              output.isPalindrome = true;
-              output.revMsg = msgCleanRev;
-              return output;
-          }
-          
-          else {
-              output.isPalindrome = false;
-              output.revMsg = msgCleanRev;
-              output.numPushUps = msgClean.length*5 % 100 + 20;
-              return output;
-          }
-        ...
+      ```js
+      function checkForPalindrome(message) {
+      ...
+      let output = {
+            isPalindrome:'',
+            revMsg: '',
+            numPushUps:'',
+            };
+        if ( msgClean == '' ) {
+            output.isPalindrome = 'error';
+            return output;
+    
+        } else if ( msgClean == msgCleanRev ) {
+            output.isPalindrome = true;
+            output.revMsg = msgCleanRev;
+            return output;
         }
-        ```
+        
+        else {
+            output.isPalindrome = false;
+            output.revMsg = msgCleanRev;
+            output.numPushUps = msgClean.length*5 % 100 + 20;
+            return output;
+        }
+      ...
+      }
+      ```
 
 ### Continued development
 
