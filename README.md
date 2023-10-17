@@ -126,7 +126,7 @@ Mobile Web App Screenshot:
 
 - [W3 Schools](https://www.w3schools.com/js/js_regexp.asp)
 
-- [MDN Web Docs]([https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions))
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)
 
 ## Author
 
