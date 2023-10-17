@@ -69,13 +69,13 @@ function checkForPalindrome(message) {
 function displayResults(message) {
 
     if (message[0]) {
-        document.getElementById('results').textContent = 'You entered a Palindrome! Take a breather.';
+        document.getElementById('results').textContent = 'A Palindrome! Take a breather.';
         document.getElementById('msg').textContent = `Your message reversed is: ${message[1]}`;
         document.getElementById('alert').classList.add('alert-success');
         document.getElementById('alert').classList.remove('alert-danger');
 
     } else {
-        document.getElementById('results').textContent = `You did not enter a Palindrome! Drop and Give Me ${message[2]}!`;
+        document.getElementById('results').textContent = `Not a Palindrome! Drop and Give Me ${message[2]}!`;
         document.getElementById('msg').textContent = `Your message reversed is: ${message[1]}`;
         document.getElementById('alert').classList.remove('alert-success');
         document.getElementById('alert').classList.add('alert-danger');
