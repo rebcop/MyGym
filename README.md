@@ -1,3 +1,4 @@
+![My Gym Logo](./img/MyGym-purple-400.svg)
 # MyGym - A Coding Challenge
 Checkout this Palindrome Checker!
 Welcome to My Gym! If you don't have a palindrome, you better be ready for some push ups! A palindrome is a group of characters that read the same backward as forward. Check your word or phrase now!
@@ -10,7 +11,6 @@ Welcome to My Gym! If you don't have a palindrome, you better be ready for some 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -117,10 +117,6 @@ Mobile Web App Screenshot:
       ...
       }
       ```
-
-### Continued development
-
-- Learn more about objects
 
 ### Useful resources
 
