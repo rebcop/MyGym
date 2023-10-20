@@ -19,11 +19,11 @@ Welcome to My Gym! If you don't have a palindrome, you better be ready for some 
 ### Screenshot
 
 Desktop Web App Screenshot:
-![Desktop Screenshot](./img/....png)
+![Desktop Screenshot](./img/desktop-screenshot.png)
 
 Mobile Web App Screenshot:
 <br/>
-<img src="./img/....JPG" alt="Mobile Screenshot" width="25%" height="auto">
+<img src="./img/iphone-screenshot.JPG" alt="Mobile Screenshot" width="25%" height="auto">
 
 ### Links
 
