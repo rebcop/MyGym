@@ -11,6 +11,7 @@ Welcome to My Gym! If you don't have a palindrome, you better be ready for some 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Possible Improvements](#possible-improvements)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -117,6 +118,11 @@ Mobile Web App Screenshot:
       ...
       }
       ```
+### Possible Improvements
+1. Combine the two for loops in the checkForPalindrome function.
+
+2. In displayResults use an object to return the results instead of an array for readability.
+
 
 ### Useful resources
 
