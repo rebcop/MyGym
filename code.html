@@ -67,7 +67,7 @@
                         <!-- CHANGE ME TO THE DEPLOYED BLOG PROJECT -->
                         <!-- NOTE: it would be a great idea to write a blog and
                         link here -->
-                        <a class="nav-link" href="" target="_blank">Blog</a>
+                        <a class="nav-link d-none" href="" target="_blank">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -81,29 +81,151 @@
             <div class="col-12 col-lg-8">
                 <pre class="line-numbers">
                     <code class="language-js">
-function displayMessage() {
-    // get the text out of our input and assign it to a variable
-    let msg = document.getElementById('message').value;
+                        // get message from user input to check if it's palindrome
+                        function getValues() {
+                        
+                            // get message input from the page
+                            let message = document.getElementById('message').value;
+                        
+                            // validate the input: make sure the input is not empty
+                            if ( message.length == 0 ) {
+                                swal.fire({
+                                    icon: 'error',
+                                    backdrop: false,
+                                    text: 'Please enter a message to check.'
+                                })
+                            } else {
+                        
+                                // pass the message to checkForPalindrome and assign its return
+                                let palindromeMsg = checkForPalindrome(message);
+                        
+                                // give the palindrome message to display results to show on the page
+                                displayResults(palindromeMsg);
+                            }
+                        }
+                        
+                        // check the user input grabbed by getValues to see if it is a palindrome
+                        function checkForPalindrome(message) {
+                        
+                            // Declare variables
+                            let msgClean = '';
+                            let msgCleanRev ='';
+                            let regex = /[A-Za-z0-9]/;
+                            let output = [];
 
-    Swal.fire(
-        {
-            backdrop: false,
-            title: 'My Gym',
-            text: msg, // <-- replace this text with that variable
-        }
-    );
-}
+                            for (let i = 0; i < message.length; i++) {
+
+                                // Take out all the characters from the input from the user that are not a letter or number
+                                if (regex.test(message[i])) {
+                                    msgClean += message[i].toLowerCase();
+                                }
+                            }
+                        
+                            // Reverse the clean message
+                            for (let i = msgClean.length - 1; i >= 0; i--) {
+                                msgCleanRev += msgClean[i];
+                            }
+                            
+                            // If there is nothing in the clean message return error
+                            if ( msgClean == '' ) {
+                                output.push('error');
+                                return output;
+                            
+                            // If the reverse of the clean message is equal to the clean message it's a palindrome!
+                            } else if ( msgClean == msgCleanRev ) {
+                                output.push(true);
+                                output.push(msgCleanRev);
+                                return output;
+                            }
+                            
+                            // If it's anything else, it's not a palindrome
+                            else {
+                                output.push(false);
+                                output.push(msgCleanRev);
+                                output.push(msgClean.length*5 % 100 + 20);
+                                return output;
+                            }
+                        
+                        // display result of checkForPalindrome back to user
+                        function displayResults(message) {
+                        
+                            // Remove classes
+                            document.getElementById('alert').classList.remove('invisible', 'alert-danger', 'alert-warning', 'alert-success');
+                        
+                            // Display success message if the input from user is a palindrome
+                            if (message[0] == true) {
+                                document.getElementById('results').textContent = 'A Palindrome! Take a breather.';
+                                document.getElementById('msg').textContent = `Your message reversed is: ${message[1]}`;
+                                document.getElementById('alert').classList.add('alert-success');
+                        
+                            // Display error message if the input from user does not have any letters or numbers to check
+                            } else if ( message[0] == 'error') {
+                                document.getElementById('results').textContent = 'Error!';
+                                document.getElementById('msg').textContent = `Please enter letters or numbers`;
+                                document.getElementById('alert').classList.add('alert-warning');
+                            }
+                            
+                            // Display fail message if the input from user is not a palindrome
+                            else {
+                                document.getElementById('results').textContent = `Not a Palindrome! Drop and Give Me ${message[2]}!`;
+                                document.getElementById('msg').textContent = `Your message reversed is: ${message[1]}`;
+                                document.getElementById('alert').classList.add('alert-danger');
+                            }
+                        }
                     </code>
                 </pre>
             </div>
             <div class="col-12 col-lg-4">
-                <!-- Explain your code here! This is the trick, this is what I learned,
-                this is how it functions -->
-                <p>The code is structured in one function</p>
+                <h4>TL;DR</h4>
                 <p>
-                    <code>displayMessage</code> displays a sweetalert
-                    when the button is pressed.
+                    To check if a word or phrase (string) is a palindrome, use a <span>for
+                        loop</span> to loop through the string. Start from the
+                    end of the string, and place each character into a new variable.
+                    Use an <span>if statement</span> to check if the original string
+                    is equal to the reversed string in the new variable.
                 </p>
+                <h4>Code Explanation</h4>
+                <p>My Gym was created with the following three functions.</p>
+                <p>
+                    <code>getValues</code> kicks everything off. When the "Time for Push Ups?"
+                    button is pressed, it grabs the value of the string from the user by accessing the <span>DOM</span>.
+                    It also uses an <span>if-else statement</span>
+                    to check if a string was entered. If no string was entered a <span>sweetalert</span> is displayed
+                    notifying the user to enter a string. If all is good,
+                    it continues to execute <code>checkForPalindrome</code>
+                    and <code>displayResults</code>.
+                </p>
+                <p>
+                    <code>checkForPalindrome</code> uses a <span>for loop</span> and <span>Regex</span> 
+                    on the string recieved from the user to keep letters and numbers and assign them to a new variable. 
+                    Another <span>for loop</span> is used to reverse the clean string by grabbing 
+                    each character from the string starting from the end of the string and adding
+                    it to a new variable. An <span>if statement</span> is used to check if the clean 
+                    string is a palindrome by checking if the reversed clean string is the same as 
+                    the clean string. If not, it will return 'error' if there is nothing in the 
+                    clean string variable otherwise, it will let you know the word or phrase entered 
+                    is not a palindrome. The result is then returned as an array.
+
+                </p>
+                <p>
+                    <code>displayResults</code> uses an <span>if statement</span> and 
+                    <code>getElementById</code> to grab the elements that need to be 
+                    updated so the results from <code>checkForPalindrome</code> 
+                    can be displayed accordingly. 
+                </p>
+                <h4>What I learned</h4>
+                <ul>
+                    <li><span>Regex</span> can be used to easily filter messages to keep only
+                        valid characters or search for a particular combination of characters.</li>
+                    <li>There can be multiple returns in a function to return different values
+                        depending on certain conditions.</li>
+                </ul>
+
+                <h4>Improvements</h4>
+                <ul>
+                    <li>Combine the two <span>for loops</span> in the <code>checkForPalindrome</code> function</li>
+                    <li>In <code>displayResults</code> use an object to return the results instead of an array for readability.</li>
+                </ul>
             </div>
         </div>
     </main>

@@ -9,7 +9,6 @@
     --rc-heading-color: #6c757d; /* Bootstrap Secondary Color */
 }
 
-
 /* #region sticky footer */
 
 html,
@@ -119,7 +118,8 @@ footer .bi:hover {
 
 /* #region Code */
 
-p span {
+p span,
+ul span {
     background-color: #e2e3e5;
     padding: 0 .5rem;
 }
